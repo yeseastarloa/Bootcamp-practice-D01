@@ -1,0 +1,288 @@
+<!--prueba de renderizado sin etiquetas-->
+hola, esto es una página web
+
+<!-- La etiqueta DOCTYPE, esta definiendo que de esa linea hacia abajo debe interpretarse todo como html, especifica que es la version 5 de html la que estamos utilizando -->
+<!DOCTYPE html/>
+
+<!-- con el atributo lang en html google por ejemplo puede identificar en que idioma esta escrito el texto -->
+<html lang="es">
+  <!--Etiquetas del HEAD esto es solo información para el navegador-->
+  <head>
+    <!-- HEAD: información para el navegador-->
+    <title>Mi primer HTML revisión</title>
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <!-- BODY: información que verá/recibirá el usuario -->
+
+    <!-- La diferencia entre los distintos títulos y las etiquetas en general com un parrafo por ejemplo: no es tanto por el tamaño sino que SU NOMBRE tiene que ver con que decriba el contenido que VA UTILIZARSE  -->
+
+    <!-- Main es un div disfrazado, su diferencia es semantica -->
+    <!-- el main define el contenido principal -->
+    <main>
+      <h1>Este es el título más importante</h1>
+      <h2>Este es menos importante</h2>
+      <h3>Este es un poco menos importante</h3>
+      <h4>Este es un poco poco menos importante</h4>
+      <h5>Este es un poco poco poco menos importante</h5>
+      <h6>Este es el menos importante</h6>
+
+      <p>Hola, esto es un parrafo</p>
+      <!-- src significa source: la fuente, ahí se paga la ruta de la img es la ruta -->
+      <!-- img es una ruta en si misma -->
+      <!-- Si defino el width en 100% la imagen se va a redimensinar si amplio o achico la pantalla serviria para un pseudo responsive?) -->
+      <img
+        width="100%"
+        src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+        alt="sky-cielo"
+      /><img
+        width="100%"
+        src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+        alt="sky-cielo"
+      />
+      <img
+        width="200"
+        src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+        alt="sky-cielo2"
+      />
+      <img
+        width="200"
+        src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+        alt="sky-cielo2"
+      />
+      <!-- Dentro de un parrafo pueden utilizarse distintos tipos de etiquetas  -->
+      <p>
+        Lorem ipsum dolor sit,
+        <b> b: esta etiqueta es una forma antigua de poner negrita</b>, la forma
+        actual de hacerlo es con la etiqueta strong
+        <strong
+          >strong: esta es la forma conrrecta de hacerlo en la
+          actualidad</strong
+        >
+        de amet consectetur adipisicing elit. Consequuntur eligendi
+        <i
+          >La etiqueta i: es italica, es la antigua forma, actualmente se
+          muestra para mostar iconos</i
+        >
+        sapiente voluptas voluptate error! Commodi tempora incidunt,
+        <em>
+          <strong>em: </strong>Es la actual etiqueta que reemplaza a la i de
+          italica
+        </em>
+        dolorum aut reiciendis, eveniet delectus, quasi inventore corporis
+        nostrum error
+        <!-- para poner un imagen al lado de la otra basta con un espacio entre cada imagen, al menos cuando las imagenes son pequeñas, cuando tiene porcentaje en 100 % por el tamaño de la imagen iran una arriba de la otra -->
+        <img
+          width="50"
+          src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+          alt="sky-cielo3"
+        />
+        <img
+          width="50"
+          src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+          alt="sky-cielo3"
+        />
+        <img
+          width="50"
+          src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+          alt="sky-cielo3"
+        />adipisci enim aperiam!
+        <strong
+          ><em
+            >Esto es un ejemplo de una negrita y una italica a la vez, una
+            etiqueta dentro de una etiqueta, ojo 💻🖱 con como se abre y se
+            cierra</em
+          ></strong
+        >
+      </p>
+      <!-- UNORDER list, una lista sin orden -->
+      <ul>
+        <!-- List Item, cada uno tendra un punto al lado, una viñeta-->
+        <li>Comprar agua</li>
+        <li>Comprar aire</li>
+        <li>Comprar fuego</li>
+      </ul>
+
+      <!-- ORDER list, tiene núeros, es una lista ordenada -->
+      <ol>
+        <li>Comprar agua</li>
+        <li>Comprar aire</li>
+        <li>Comprar fuego</li>
+      </ol>
+    </main>
+    <table border="1">
+      <!-- thead: sirve semanticamente para identificar la cabeza de la tabla -->
+      <thead>
+        <!-- tr: table road, una fila -->
+        <tr>
+          <!-- th: table head, una columna, siempre será en negrita, si no queremos negrita tenemos que hacerlo con td: table data-->
+          <th>Columna 1</th>
+          <th>Columna 2</th>
+          <!-- la propiedad colspan es para unir celdas, es una especia de combinar celdas en equivalencia a excel -->
+          <th colspan="4">hola</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <!-- td: table data -->
+          <td>Valor 1</td>
+          <td>Valor 2</td>
+          <td>icono 1 💿</td>
+          <td colspan="2">icono 2 🎞</td>
+          <td>icono 3 💾</td>
+        </tr>
+        <tr>
+          <td>valor 1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>blabla</td>
+          <td colspan="2"></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      <tfooter>
+        <td colspan="7"><center>Este es el footer de la tabla</center></td>
+      </tfooter>
+    </table>
+    <br />
+    <br />
+    <br />
+
+    <!-- En el formlario vamos a obtener informacion para enviarla al servidor, el atributo action es "obligatorio"(en realidad se puede eliminar),  y nos va a servir para saber a que dirección vamos a enviar esa información -->
+    <!-- un link vacio lo hacemos con un # , así le decimos no vayas a ninguna parte quedate en el lugar donde estas-->
+    <form action="#">
+      <p>Hola esto es un formulario</p>
+      <!-- el label sirve para deinir el texto delante del input -->
+      <!-- En el for de label vamos a introducir a que elemento vamos a relacionar ese for con ese imput -->
+      <label for="searchBox">Buscar</label>
+      <!-- el nombre dels input no puede tener caracteres espacio, ni caracteres especiales, ni mayusculas ni minusculas, el autofocus sirve para hacer foco en donde debe empezar el formulario-->
+      <input
+        type="text"
+        name="search"
+        id="searchBox"
+        autofocus
+        placeholder="Escribe aquí tu búsqueda"
+      />
+      <!-- aca estoy utilizando un br para separar el formulario pero podría usar un div -->
+      <br />
+      <label for="age">Escribe tu edad</label>
+
+      <input type="number" name="age" id="age" min="18" max="99" />
+
+      <br />
+      <input type="file" name="" id="" />
+      <div>
+        <label for="yes">Yes</label>
+        <input type="radio" name="input" id="yes" />
+
+        <label for="No">No</label>
+        <input type="radio" name="input" id="No" />
+      </div>
+      <br />
+      <div>
+        <label for="azucar">Azucar</label>
+        <input type="checkbox" name="chek" id="" />
+
+        <label for="">flores</label>
+        <input type="checkbox" name="chek" id="" required />
+
+        <label for="">Muchos colores</label>
+        <input type="checkbox" name="" id="" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+
+        <input type="password" name="password" id="password" disabled />
+      </div>
+      <label for="">Comentario</label>
+      <!-- las medidas deberiamos hacerlo con css -->
+      <textarea name="comentario" id="comentario" cols="30" rows="10" readonly>
+Hola mundo maximo 40 carácteres</textarea
+      >
+      <div>
+        <label for="">qué prefieres?</label>
+        <select name="" id="">
+          <option value="azucar">azucar</option>
+          <option value="flores">flores</option>
+          <option value="colores">muchos colores</option>
+        </select>
+      </div>
+      <br />
+      <!-- el boton de submit va enviar la información a la dirección que indiquemos en action -->
+      <button type="submit">enviar</button>
+    </form>
+    <!-- br: es un salto de linea -->
+    <br />
+    <br />
+    Esto es un div
+    <!-- Todo el contenido del div va a funcionar como una estructura, todo se va a mover junto, El div sirve para agrupar contenido-->
+    <div style="width: 400px; background-color: rgb(174, 175, 212)">
+      <img
+        width="100%"
+        src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+        alt="sky-cielo3"
+      />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit error
+        atque minima provident sunt ipsam consequuntur delectus, illo rem.
+        Molestias modi consectetur hic. Nostrum quis, eaque nobis delectus omnis
+        reiciendis.
+      </p>
+      <img
+        width="90%"
+        src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+        alt="sky-cielo3"
+      />
+    </div>
+    <br />Esto es otro div<br />
+    <!-- Si pongo 2 div seguidos, quedan uno arriba y otro abajo -->
+    <div style="width: 400px; background-color: rgb(135, 136, 161)">
+      <img
+        width="100%"
+        src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+        alt="sky-cielo3"
+      />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit error
+        atque minima provident sunt
+        <span style="color: rgb(21, 21, 242)">
+          <strong
+            >span: permite agregar propiedades de estilos a un sector de un
+            parrafo en especifico, lo mejor es utilizarlo dentro del contexto de
+            un texto, en otro caso es recomendable utilizar un DIV</strong
+          ></span
+        >
+        ipsam consequuntur delectus, illo rem. Molestias modi consectetur hic.
+        <!-- la etiqueta a (de ancore) permite insertar links en la web puede ser una dirección externa o interna de nuestros proyectos-->
+        <span style="color: rgb(212, 205, 14)">
+          <a href="https://www.yeseastarloa.com/"
+            >Esto es un Link, aqui pueden conocer mi web como artista visual</a
+          >
+        </span>
+        <a href=""></a>
+        ------------------------------------------------------
+        <a href="contacto.html"
+          >también se pueden agregar links internos a otros archivos, todo con
+          la misma etiqueta, como este que te lleva al archivo contacto.html</a
+        >
+        Nostrum quis, eaque nobis delectus omnis reiciendis.
+      </p>
+      <img
+        width="90%"
+        src="https://live.staticflickr.com/4126/5173918548_39edac9e28_b.jpg"
+        alt="sky-cielo3"
+      />
+    </div>
+    <aside><p>Aside: Esto es una barra lateral</p></aside>
+  </body>
+  ssjsjsjs
+</html>
